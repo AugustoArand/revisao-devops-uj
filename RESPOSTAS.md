@@ -108,7 +108,7 @@ Escreva no arquivo de respostas os dois resultados previstos e o caminho da fun�
 
 Qual é a sequência entre npm test, package.json e os arquivos de teste?
 
-Resposta
+Resposta -> O npm test lê o package.json e executa o script "test": "node --test". O runner nativo do Node procura os arquivos de teste, como tests/pontuacao.test.js. Esse arquivo importa calcularPontuacao e roda os assert. A sequência é: npm test → package.json (scripts.test) → node --test → arquivos *.test.js → resultado.
 
 Observação após a execução
 
@@ -116,7 +116,7 @@ Observação após a execução
 
 Se o runner executar zero testes e terminar sem erro, isso é evidência suficiente para liberar a versão? O que você conferiria?
 
-Resposta
+Resposta -> Não. Zero testes executados com sucesso não prova nada, porque nenhuma regra foi verificada. Eu conferiria no log o número de testes (tests 5), os aprovados (pass 5), as falhas (fail 0) e os nomes dos casos. Também conferiria se o caminho do arquivo de teste está correto.
 
 Observação após a execução
 
