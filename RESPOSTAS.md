@@ -16,7 +16,7 @@ Responda Q01 a Q22 em equipe. Cada integrante deve registrar suas respostas pró
 
 Se queremos automatizar os testes e disponibilizar o site por um endereço, qual responsabilidade cabe ao GitHub Actions e qual cabe ao GitHub Pages?
 
-Resposta
+Resposta -> O GitHub Actions é responsável por automatizar os processos de desenvolvimento, executando testes e verificando se o código está funcionando corretamente. Já o GitHub Pages é responsável por hospedar e publicar o site, disponibilizando um endereço para que as pessoas possam acessá-lo pela internet.
 
 Observação após a execução
 
@@ -24,7 +24,7 @@ Observação após a execução
 
 Que problema operacional pode ocorrer se cada integrante publicar uma cópia diferente do código sem registrar a versão utilizada?
 
-Resposta
+Resposta -> Pode ocorrer falta de organização e divergência entre as versões do projeto, causando erros, conflitos e dificuldades para identificar qual código está atualizado. Sem registrar as versões, também fica mais difícil corrigir problemas e acompanhar as alterações realizadas por cada integrante.
 
 Observação após a execução
 
@@ -38,7 +38,7 @@ Anote no arquivo de respostas o link do repositório e o nome da branch.
 
 Que informação o commit registra para que outra pessoa consiga localizar esta entrega depois?
 
-Resposta
+Resposta -> O commit registra um identificador único (o hash SHA, com a versão curta de 7 caracteres), a mensagem, o autor, a data e hora, a branch e exatamente quais arquivos e linhas mudaram. Com o hash e a mensagem, qualquer pessoa encontra essa entrega no histórico.
 
 Observação após a execução
 
@@ -46,7 +46,7 @@ Observação após a execução
 
 O que pode acontecer com nosso pipeline se site/index.html ficar dentro de projeto_inicial/site/index.html no repositório?
 
-Resposta
+Resposta -> Os caminhos ficariam errados. O workflow publica ./site e os testes importam ../site/pontuacao.js. Com o arquivo em projeto_inicial/site/, os testes falhariam porque não acham o módulo, e o upload do Pages acharia a pasta vazia ou inexistente. O pipeline quebraria ou publicaria um site sem conteúdo.
 
 Observação após a execução
 
