@@ -83,7 +83,7 @@ Registre o identificador do novo commit e descreva em uma frase a diferença ent
 
 Por que executar testes sobre a mesma função utilizada pela interface ajuda a verificar a versão que vamos publicar?
 
-Resposta
+Resposta -> Os testes importam o mesmo arquivo pontuacao.js que o app.js usa na página. Se o teste passa, a regra que vai para o ar é a mesma que foi verificada. Uma cópia da função poderia passar no teste enquanto a versão real tem defeito.
 
 Observação após a execução
 
@@ -91,7 +91,10 @@ Observação após a execução
 
 Defina o resultado esperado para três acertos e para nenhuma resposta marcada. Qual regra sustenta sua previsão?
 
-Resposta
+Resposta -> Três acertos ([0,1,2] contra [0,1,2]) → 3 pontos.
+Nenhuma resposta marcada ([null,null,null]) → 0 pontos.
+
+A regra é que cada posição igual ao gabarito soma 1, e respostas null ou undefined são ignoradas.
 
 Observação após a execução
 
