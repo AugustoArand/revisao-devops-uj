@@ -60,7 +60,7 @@ Copie a mensagem e o identificador curto do commit. Para consultar, use o histó
 
 Se uma execução futura apresentar um erro, por que devemos anotar o identificador do commit associado a ela?
 
-Resposta
+Resposta -> O identificador mostra exatamente qual versão do código foi executada. Com ele dá para abrir o diff daquele commit, achar a alteração que causou o erro, reproduzir o problema e saber para qual versão voltar.
 
 Observação após a execução
 
@@ -68,7 +68,8 @@ Observação após a execução
 
 A mudança do título já iniciou algum teste automático neste momento? O que ainda precisamos configurar?
 
-Resposta
+Resposta -> Não. Ainda não existe nenhum arquivo de workflow em .github/workflows/, então o GitHub Actions não tem instruções para executar. Falta criar os testes, configurar o npm test no package.json e criar o YAML do workflow.
+Evidência: Personaliza titulo do quiz – [hash]. A única diferença entre as versões é o texto do <h1>.
 
 Observação após a execução
 
