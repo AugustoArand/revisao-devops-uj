@@ -2,7 +2,12 @@
 
 Equipe
 
-Integrantes
+Integrantes:
+- João Henrique de Oliveira Andrade
+- Caio Bispo Reis Silva
+- Kayque Tavares Gomes
+- Luiz Gustavo Freitas Roza
+- Augusto Arandiba dos Santos Junior
 
 Repositório
 
